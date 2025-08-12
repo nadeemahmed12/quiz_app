@@ -12,7 +12,7 @@ function Quiz() {
   useEffect(() => {
     const fetchQuiz = async () => {
       const response = await axios.get(
-        `http://localhost:5000/api/quizzes/${id}`
+        `https://quiz-app-lnbi.onrender.com ${id}`
       );
       setQuiz(response.data);
     };
