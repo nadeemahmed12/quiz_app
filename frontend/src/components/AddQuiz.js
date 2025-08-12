@@ -53,7 +53,7 @@ function AddQuiz() {
 
     try {
       const newQuiz = { title, description, type, questions };
-      await axios.post("http://localhost:5000/api/quizzes/", newQuiz);
+      await axios.post("https://quiz-app-lnbi.onrender.com", newQuiz);
       navigate("/");
     } catch (error) {
       console.error("Failed to create quiz", error);
