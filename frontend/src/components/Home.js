@@ -5,7 +5,7 @@ function Home() {
   const [quizzes, setQuizzes] = useState([]);
   useEffect(() => {
     axios
-      .get("https://quiz-app-lnbi.onrender.com")
+      .get("https://quiz-app-lnbi.onrender.com/api/quizzes/")
       .then((res) => setQuizzes(res.data));
   }, []);
   return (
